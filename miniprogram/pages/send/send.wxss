@@ -1,0 +1,84 @@
+.body{
+  position: relative ;
+  margin:3vw;
+  height: 25vh;
+  background: #fff;
+  box-shadow:1px 1px 8px #ddd;
+  border-radius:5px; 
+}
+.body image{
+  width:50rpx;
+  height: 50rpx;
+  margin: 4vw;
+}
+.dress-a,.dress-b{
+  height: 12.5vh;
+  display: flex;
+  align-items: center;
+}
+.dress-title{
+  width: 70vw;
+  font-weight: 500;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.dress-a view{
+  height:100%;
+  line-height: 12.5vh; 
+  border-bottom:1px solid #eee;
+}
+.wp{
+  position: relative;
+  margin: 0 3vw 6vh 3vw;
+  width: 94vw;
+  top: -5vh;
+  background: #fff;
+
+}
+.wp image{
+  width: 50rpx;
+  height:50rpx;
+}
+.wp-li{
+  display: flex;
+  margin: 2vw 4vw 2vw 4vw;
+  height:9vh;
+  align-items: center;
+  border-bottom:1px solid #eee; 
+}
+.wp-li-b{
+  width: 57vw; 
+  text-align: right;
+  font-size: 0.9em;
+}
+.wp-li-a{
+  width:25vw; 
+}
+.wp-li:nth-child(3){
+  border: none;
+}
+.foot{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 9vh;
+  background: #fff;
+  border-top:1px solid #eee; 
+}
+.foot-a{
+ flex: 1;
+ padding-left:4vw; 
+ width:70vw;
+}
+.foot-b{
+  width: 40vw;
+  height: 9vh;
+  line-height: 9vh;
+  font-size:1.05em;
+  font-weight: 600; 
+  text-align: center;
+  background: #FFDF10;
+}

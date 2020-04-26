@@ -1,0 +1,62 @@
+<view class='container'>
+  <!--Tab布局-->
+  <view class='title'>
+    <view class="{{0 == currentIndex ? 'titleSel a' : 'titleUnsel a'}}"  bindtap='titleClick' data-idx='0'>
+      <text>发送者</text>
+      <hr class="{{0 == currentIndex ? 'headerLineSel' : ' '}}" />
+    </view>
+    <view class="{{1 == currentIndex ? 'titleSel a' : 'titleUnsel a'}}"  bindtap='titleClick' data-idx='1'>
+      <text>收件者</text>
+      <hr class="{{1 == currentIndex ? 'headerLineSel' : ''}} " />
+    </view>
+    <view class="pover">
+      <image src="./tj.png" style="width:60rpx;height:60rpx;" bindtap="skip">
+      <view wx:if="{{flag}}"  class="pover-item">
+        <view bindtap="onskipa">个人中心</view>
+        <view bindtap="onskipb">收件记录</view>
+        <view bindtap="onskipc">取件记录</view>
+      </view>
+      </image>
+    </view>
+    
+  </view>
+  
+  <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+    <swiper-item class='swiper'>
+      <view wx:if="{{!firstList}}" class="jy-mian">
+        <image src="./jy.png" ></image>
+        <view>暂无交易记录</view>
+      </view>
+      <view wx:if="{{firstList}}" wx:for="{{firstList}}" wx:key="index" class='recordItem' data-id="{{index}}" bindtap="onskip">
+        <view class="item-title"> <image src="./wl.png"></image> <view>物流</view> <text>正在配送</text></view>
+        <view class="item-main">
+          <view>下单时间: <text>{{item.time}}</text></view>
+          <view>物品信息: <text>{{item.text}}</text></view>
+          <view>支付金额: <text>{{item.money}}</text></view>
+        </view>
+        <view class="item-button">
+          <view bindtap="onskip">查看详情</view>
+        </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item class='swiper'>
+      <view wx:if="{{!secondList}}" class="jy-mian">
+        <image src="./jy.png" ></image>
+        <view>暂无交易记录</view>
+      </view>
+      <view wx:if="{{secondList}}" wx:for="{{secondList}}" wx:key="index" class='recordItem' >
+        <view class="item-title"> <image src="./wl.png"></image> <view>物流</view> <text>正在配送</text></view>
+        <view class="item-main" data-id="{{index}}" bindtap="onskip">
+          <view>下单时间: <text>{{item.time}}</text></view>
+          <view>物品信息: <text>{{item.text}}</text></view>
+          <view>支付金额: <text>{{item.money}}</text></view>
+        </view>
+        <view class="item-button">
+          <view data-id="{{index}}" bindtap="onskip">查看详情</view>
+          <view bindtap="skips" data-id="{{index}}" class="button-right" style="background: #FE4E29;color: white;border:none;">收件</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

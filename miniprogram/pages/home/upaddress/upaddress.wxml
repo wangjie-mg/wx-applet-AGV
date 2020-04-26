@@ -1,0 +1,18 @@
+<form bindsubmit="onsubmit">
+  <view class="list">
+    <view class="li" bindtap="onskip">
+      <view class="li-a">地址</view>
+      <view class="li-b li-m" style="color:{{dflag ? '#000':'#ccc'}}">{{ondress.title}}</view>
+      <image src="../../home/jt.png" style="width:50rpx;height:50rpx"></image>
+    </view>
+    <view class="li">
+      <view class="li-a">联系人</view>
+      <input class="li-b" placeholder-style="color:#ccc" placeholder="姓名" value="{{name}}" maxlength="10" bindinput="oninputp"></input>
+    </view>
+    <view class="li">
+      <view class="li-a">电话</view>
+      <input class="li-b" type="number" placeholder="手机号" placeholder-style="color:#ccc" value="{{phone}}" bindinput="oninput" maxlength="11"></input>
+    </view>
+  </view>
+  <button form-type="submit" disabled="{{flag}}">保存并使用</button>
+</form>

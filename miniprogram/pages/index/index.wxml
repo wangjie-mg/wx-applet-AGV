@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="navbar" style="height:{{navHeight}}px;margin-top:{{navTop}}px;">
+  <view class="navbar_left" bindtap="skipc">
+  <image src="./wd.png"></image>
+  </view>
+  <view class="navbar_title">智车物流</view>
+</view>
+
+<map
+  id="myMap"
+  style="width: 100vw; height: 100vh;"
+  longitude="{{longitude}}" latitude="{{latitude}}"
+  scale='16'
+  show-location="true"
+  subkey="O4RBZ-2Z63P-7BZDH-LV5YV-KVLXV-JKFXI"
+  polyline="{{polyline}}"
+  markers="{{markers}}"
+></map>
+<view class="fixed main-button">
+  <view bindtap="skipa" class="button-a">发件</view>
+  <view class="button-ab"></view>
+  <view bindtap="skipb" class="button-b">收件</view>
+</view>
+<view class="fixed main-tz">
+  <view wx:if="{{!flag}}" class="main-tz-dl" bindtap="skip">
+    <view class="main-dl-a">登录账号开始体验</view>
+    <view class="main-dl-b">去登陆 ></view>
+  </view>
+  <text decode="true" wx:if="{{flag}}" style="margin-left:3vw;color:#A5A9AC;">{{phone}}&nbsp;&nbsp;欢迎进入智车。</text>
+</view>
+<view wx:if="{{aflag}}" class="fixed main-show" bindtap="skipb">
+    <view class="main-dl-a">有{{length}}件物品正在为您配送</view>
+    <view class="main-dl-b">去查看 ></view>
+</view>
+<view class="fixed main-cnav">
+  <view wx:if="{{flag}}" class="nav-dd" bindtap="skipd"><image src="./dd.png"></image></view>
+  <view class="nav-dw" ><image src="./dw.png"></image> </view>
+  <view class="nav-kf" ><image src="./kf.png"></image></view>
+</view>

@@ -1,0 +1,15 @@
+.text{
+  margin:4vw;
+  border:1px solid #aaa; 
+  height: 28vh;
+}
+textarea{
+  width: 86vw;
+  height: 24vh;
+  padding: 3vw;
+}
+button{
+  min-width: 92vw;
+  color: white;
+  background: #07c160;
+}

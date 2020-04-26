@@ -1,0 +1,5 @@
+<view class="main">
+  <view class="title">取件码</view>
+  <view class="password">{{password}}</view>
+  <view class="context">备注：请将取件码放置到小车前扫描。</view>
+</view>

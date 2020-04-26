@@ -1,0 +1,30 @@
+.list{
+  margin: 4vw;
+}
+.li{
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 1px solid #ddd;
+}
+.li-a{
+  width: 25vw;
+}
+.li-b{
+  width:60vw;
+ 
+}
+.li-m{
+ overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+button{
+  min-width: 90vw;
+  color: white;
+  background: #07c160;
+}
+button[disabled]{
+  color: #A1A1A1 !important;
+  background: #E5E5E5 !important;
+}

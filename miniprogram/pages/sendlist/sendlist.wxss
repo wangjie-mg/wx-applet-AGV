@@ -1,0 +1,141 @@
+.container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.title {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height:108rpx;
+  background: #26bcd5;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.swiper{
+  margin-top:55rpx; 
+}
+.pover{
+  margin-left: 350rpx;
+}
+.pover-item{
+  z-index: 10;
+  position: absolute;
+  margin:25rpx 0 0 -120rpx;
+  background: #fff;
+  border-radius: 7px;
+}
+.pover-item::before{
+  content: " ";
+  position: absolute;
+  width: 0;
+  height:0;
+  top:-23rpx; 
+  left:140rpx; 
+  border-left: 15rpx solid transparent;
+  border-right: 15rpx solid transparent;
+  border-bottom: 27rpx solid white;
+}
+.pover-item view{
+  padding: 20rpx;
+}
+.pover-item view:nth-child(1){
+  border-bottom: 1px solid #eee;
+}
+.pover-item view:nth-child(2){
+  border-bottom: 1px solid #eee;
+}
+.titleSel {
+  font-size: 1em;
+  font-weight: 600;
+}
+.titleUnsel{
+  font-size: 0.9em;
+  color: #444;
+}
+.a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 6vw;
+  align-items: center;
+}
+.a text{
+  color: white;
+  padding: 1vw 0 2vw 0;
+}
+.headerLineSel {
+  background: #fff;
+  height: 8rpx;
+  width: 90rpx;
+  border-radius: 2px;
+}
+.swiper {
+  width: 100%;
+  flex: 1;
+  height:100vh;
+  overflow: scroll;
+}
+.recordItem {
+  margin: 3vw;
+  background-color: white;
+  padding-bottom: 20rpx;
+  border-radius: 8px;
+}
+.item-title{
+  display: flex;
+  align-items: center;
+  padding:20rpx; 
+  border-bottom: 1px solid #eee; 
+}
+.item-title view{
+  margin-left: 20rpx;
+}
+.item-title image{
+  width: 60rpx;
+  height:60rpx;
+}
+.item-title text{
+  color: #777;
+  width: 75%;
+  text-align: right;
+}
+.item-button{
+  display: flex;
+  justify-content: flex-end;
+}
+.item-button view{
+  width:150rpx;
+  margin-right:4vw; 
+  padding:10rpx 20rpx 10rpx 20rpx;
+  color: #555;
+  border-radius:7px;
+  border: 1px solid #aaa;
+}
+.item-main{
+  padding:30rpx 0 30rpx 60rpx;
+  color: #999; 
+}
+.item-main view{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.jy-mian{
+  margin-top:20vw; 
+}
+.jy-mian image{
+  display: block;
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+}
+.jy-mian view{
+  margin-top: 20rpx;
+  text-align: center;
+  color: #aaa;
+}
+.button-right{
+  text-align: center
+}

@@ -1,0 +1,16 @@
+<view class="container">
+<form bindsubmit="onsubmit"> 
+<view class="dl-input">
+  <input  name="phone" type="number" placeholder-style="color:#ccc" value="{{phone}}" focus="true" bindinput="oninput" maxlength="11" placeholder="输入电话" />
+</view>
+
+<view class="dl-input">
+  <input  type="password" name="password" value="{{password}}" placeholder-style="color:#ccc" bindinput="inputpw" placeholder="输入密码" />
+</view>
+<view class="dl-input">
+  <input  type="password" name="password" placeholder-style="color:#ccc" bindinput="inputpa" placeholder="确认密码" />
+</view>
+  <button form-type="submit" style="min-width: 70vw;font-weight: 400;" class="dl-form" disabled="{{flag}}">注册</button>
+</form>
+<text style="margin-top:3vh;font-size:0.85em;color:red;">注意：此处电话没有验证，请仔细真实填写，否则无法正常使用小程序功能。</text>
+</view>

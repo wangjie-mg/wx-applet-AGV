@@ -1,0 +1,9 @@
+
+<view style="display:flex;align-items:center;">
+  <view style="margin:4vw">西安</view>
+  <input  bindinput="getsuggest" value="{{backfill}}" auto-focus placeholder="{{back}}"></input>
+</view>
+<view wx:for="{{suggestion}}" wx:key="index" data-id="{{index}}" style="margin:2vw 4vw 2vw 6vw" bindtap="onskip">
+    <view style="" bindtap="backfill" id="{{index}}">{{item.title}}</view>
+    <view style="font-size:0.8em;color:#ccc;">{{item.addr}}</view>
+</view>

@@ -1,0 +1,13 @@
+<!--miniprogram/pages/login.wxml-->
+<view class="container">
+<form bindsubmit="onsubmit"> 
+<view class="dl-input">
+  <input  name="phone" type="number" placeholder-style="color:#ccc" value="{{phone}}" focus="true" bindinput="oninput" maxlength="11" placeholder="输入电话" />
+</view>
+<view class="dl-input">
+  <input  type="password" name="password" placeholder-style="color:#ccc" bindinput="oninputp" placeholder="输入密码" />
+</view>
+<view style="width:100%;color:#07c160;margin:0 0 3vh 0;text-align: right;font-size:0.9em;" bindtap="onskip">还没有账号？来注册吧</view>
+  <button form-type="submit" style="min-width: 70vw;font-weight: 400;" class="dl-form" disabled="{{flag}}">登录</button>
+</form>
+</view>

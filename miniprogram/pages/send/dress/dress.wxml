@@ -1,0 +1,28 @@
+<form bindsubmit="onsubmit">
+  <view class="list">
+    <view class="li" bindtap="onskip">
+      <view class="li-a">地址</view>
+      <view class="li-b li-m" style="color:{{dflag ? '#000':'#ccc'}}">{{ondress.title}}</view>
+      <image src="../../home/jt.png" style="width:50rpx;height:50rpx"></image>
+    </view>
+    <view class="li">
+      <view class="li-a">联系人</view>
+      <input class="li-b" placeholder-style="color:#ccc" placeholder="姓名" value="{{name}}" maxlength="10" bindinput="oninputp"></input>
+    </view>
+    <view class="li">
+      <view class="li-a">电话</view>
+      <input class="li-b" type="number" placeholder="手机号" placeholder-style="color:#ccc" value="{{phone}}" bindinput="oninput" maxlength="11"></input>
+    </view>
+  </view>
+  <button form-type="submit" disabled="{{flag}}">保存并使用</button>
+</form>
+
+<view style="margin-top:4vw;padding:0 4vw 0 4vw;background:white;">
+  <view style="color:#aaa;height:80rpx;line-height:80rpx;border-bottom:1px solid #eee;">常用地址</view>
+  <view wx:for="{{address}}" wx:key="index" data-id="{{index}}" style="margin:3vw 0 3vw 0;" bindtap="skip">
+      <view>{{item.ondress.title}}</view>
+      <view style="font-size:0.7em;color:#aaa;">
+        <text decode="true">{{item.name}}&nbsp;&nbsp;{{item.phone}}</text>
+      </view>
+  </view>
+</view>

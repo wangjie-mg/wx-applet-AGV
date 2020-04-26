@@ -1,0 +1,22 @@
+.container{
+  position: relative;
+  width: 70vw;
+  margin: 0 auto;
+  top: 5vh;
+}
+input{
+  margin: 2vh 0 2vh 1vw;
+}
+.dl-input{
+  width: 70vw;
+  margin: 4vh 0 4vh 0;
+  border-bottom:1px solid #ccc; 
+}
+.dl-form{
+  color: white;
+  background: #07c160;
+}
+.dl-form[disabled]{
+  color: #A1A1A1 !important;
+  background: #E5E5E5 !important;
+}

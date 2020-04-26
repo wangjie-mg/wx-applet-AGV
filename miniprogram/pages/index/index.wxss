@@ -1,0 +1,101 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+}
+.navbar_left{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 30rpx;
+}
+.navbar_left image{
+  width: 100%;
+  height: 100%;
+}
+.navbar_title{
+  flex: 1;
+  margin-right: 80rpx;
+}
+.fixed{
+  position: fixed;
+}
+.main-button{
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  height: 100rpx;
+  bottom: 40rpx;
+  left: 5vw;
+  border-radius: 7px;
+  font-size: 0.9em;
+  background: #25282F;
+  color: white;
+}
+.button-a,.button-b{
+  width: 45vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.button-ab{
+  width:0.6vw;
+  height: 50rpx;
+  border-radius: 1px; 
+  background: white;
+}
+.main-tz{
+  width:90vw;
+  left: 5vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  bottom:168rpx;
+  border-radius: 7px;
+  background: #F9FDFF;
+  font-size: 0.88em;
+}
+.main-tz-dl{  
+  display: flex;
+  background: #FF4C16;
+  
+  color: white;
+}
+.main-show{
+  display: flex;
+  background: #FFDF10;
+  border-radius: 7px;
+  width:90vw;
+  left: 5vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  bottom:270rpx;
+  font-size: 0.88em;
+}
+.main-dl-a{
+  width: 60vw;
+  text-align: left;
+  margin-left: 4vw;
+}
+.main-dl-b{
+  width: 40vw;
+  text-align: right;
+  margin-right: 4vw;
+}
+.main-cnav{
+  right: 5vw;
+  bottom: 450rpx;
+}
+.main-cnav view{
+  width: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 9px;
+}
+.main-cnav image{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 15rpx;
+}
+.main-cnav view:nth-child(2){
+  margin: 50rpx 0 50rpx 0;
+}

@@ -1,0 +1,54 @@
+<map
+  id="map"
+  style="width: 100%; height: {{flag ? 35:100}}vh;"
+  longitude="{{longitude}}" latitude="{{latitude}}"
+  show-location="{{flag ? false:true}}"
+  subkey="O4RBZ-2Z63P-7BZDH-LV5YV-KVLXV-JKFXI"
+  polyline="{{polyline}}"
+  markers="{{markers}}"
+></map>
+<view class="body" style="top: {{flag? -5:-30}}vh;">
+  <view class="dress-a">
+    <image src="./qj.png"></image>
+    <view class="dress-title" bindtap="skip">{{indress.title}}</view>
+  </view>
+  <view class="dress-b">
+    <image src="./sj.png"></image>
+    <view bindtap="onskip">
+      <view wx:if="{{!flag}}" style="color:#aaa;width:70vw;height:100%;height: 12.5vh;line-height:12.5vh;">送到哪去</view>
+      <view wx:if="{{flag}}">
+        <view class="dress-title">{{ondress.title}}</view>
+        <view style="font-size:0.7em;color:#aaa;">
+          <text decode="true">{{name}}&nbsp;{{phone}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="wp">
+   <view class="wp-li" data-id="1"  bindtap="ontext">
+    <view class="wp-li-a">物品信息</view>
+    <view class="wp-li-b" style="color:{{xflag? '#000':'#aaa'}}">{{text}}</view>
+    <image src="../home/jt.png"></image>
+   </view>
+   <view class="wp-li" bindtap="onweight">
+    <view class="wp-li-a">物品重量</view>
+    <view class="wp-li-b" style="color:{{wflag? '#000':'#aaa'}}">{{weight}}</view>
+    <image src="../home/jt.png"></image>
+   </view>
+
+   <view class="wp-li" data-id="2" bindtap="ontext">
+    <view class="wp-li-a">备注</view>
+    <view class="wp-li-b" style="color:{{bflag? '#000':'#aaa'}}">{{btext}}</view>
+    <image src="../home/jt.png"></image>
+   </view>
+</view>
+
+<view class="foot" wx:if="{{flag}}">
+  <view class="foot-a">
+  <view><text>运送费 <text style="color:red;">￥{{money}}</text></text></view>
+  <view style="font-size:0.7em;color:#555;">{{distance}}公里</view>
+  </view>
+  <view class="foot-b"  bindtap="onsubmit">提交订单</view>
+</view>

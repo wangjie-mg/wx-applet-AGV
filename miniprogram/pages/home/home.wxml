@@ -1,0 +1,38 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="main">
+  <view class="main-tx" ><view><image src="./tx.png"></image></view></view>
+  <view class="main-ph">{{phone}}</view>
+  <view class="main-kf">
+    <image src="./kf.png"></image>
+    <view>客服</view>
+  </view>
+</view>
+<view class="zs">
+ <view class="zs-main">
+  <view>0</view>
+  <view>累计送件数</view>
+ </view>
+ <view class="zs-main">
+  <view>0</view>
+  <view>累计收件数</view>
+ </view>
+ <view class="zs-main">
+  <view>0</view>
+  <view>未收件数</view>
+ </view>
+</view>
+<view class="list">
+   <view bindtap="onskipa">
+    <text>地址管理</text>
+    <image src="./jt.png"></image>
+  </view>
+  <view bindtap="onskipb">
+    <text>送件记录</text>
+    <image src="./jt.png"></image>
+  </view>
+  <view bindtap="onskipc">
+    <text>收件记录</text>
+    <image src="./jt.png"></image>
+  </view>
+</view>
+  <view class="out" bindtap="onout">退出登录</view>

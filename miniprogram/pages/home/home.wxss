@@ -1,0 +1,84 @@
+.main{
+  display: flex;
+  height:25vh;
+  background: rgb(38, 188, 213);
+  align-items: center;
+  color: white;
+}
+.main-tx{
+  width: 140rpx;
+  height: 140rpx;
+  margin-left:5vw; 
+  border-radius: 50%;
+  background: white;
+}
+.main-tx view{
+  width: 116rpx;
+  height: 116rpx;
+  margin: 13rpx;
+  background: rgb(225,233,220);
+  border-radius: 50%;
+}
+.main-tx image{
+  padding: 10%;
+  width: 80%;
+  height: 80%;
+}
+.main-ph{
+  width: 390rpx;
+  margin-left:5vw;
+
+}
+.main-kf{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 0.8em;
+  background: rgba(0,0,0,0.15);
+  border-radius:7px 0 0 7px ; 
+}
+.main-kf image{
+  width: 30rpx;
+  height: 30rpx;
+  padding:15rpx 15rpx 15rpx 25rpx; 
+}
+.zs{
+  display: flex;
+  padding: 5vw;
+
+}
+.zs-main{
+  width: 30vw;
+  text-align: center;
+  padding-bottom:5vw; 
+  border-bottom: 1px solid #eaeaea;
+}
+.zs-main view:nth-child(2){
+  font-size: 0.85em;
+  color: #555;
+}
+.list{
+  padding: 0 5vw 0 5vw; 
+}
+.list view{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+.list text{
+  flex: 1;
+  font-size: 0.9em;
+}
+.list image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.out{
+  margin: 5vw 5vw 0 5vw;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius:5px; 
+  color: white;
+  background: #FF4F16;
+  text-align: center;
+}

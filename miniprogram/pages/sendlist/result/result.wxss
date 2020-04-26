@@ -1,0 +1,26 @@
+.main{
+  width: 92vw;
+  margin:30vh 4vw 0 4vw;
+  /* top: 20vh; */
+  background: #fff;
+  border-radius:7px; 
+  box-shadow:1px 1px 8px #ddd;
+
+}
+.title{
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 1.2em;
+  /* font-weight: 660; */
+}
+.password{
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+.context{
+  color: #999;
+  font-size: 0.9em;
+  margin: 20rpx 0 20rpx 40rpx;
+}

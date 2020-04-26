@@ -1,0 +1,17 @@
+<view style="padding:0 4vw 0 4vw;background:white;">
+  <view style="display:flex;align-items:center;height:85rpx;line-height:85rpx;border-bottom:1px solid #eee;">
+   <view style="width:83vw;"> 常用地址</view>
+  <image src="./tj.png" style="width:50rpx;height:50rpx;" bindtap="onskip"></image>
+  </view>
+  <view wx:for="{{address}}" wx:key="index" data-id="{{index}}" class="li"  bindtap="skip">
+      <view>
+        <view class="dress-title">{{item.ondress.title}}</view>
+        <view style="font-size:0.7em;color:#aaa;">
+          <text decode="true">{{item.name}}&nbsp;&nbsp;{{item.phone}}</text>
+        </view>
+      </view>
+      <view class="li-b" bindtap="onskip">
+        <image src="./bj.png"></image>
+      </view>
+  </view>
+</view>

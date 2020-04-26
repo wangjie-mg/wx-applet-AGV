@@ -1,0 +1,19 @@
+<map
+  id="myMap"
+  style="width: 100vw; height: 50vh;"
+  longitude="{{longitude}}" latitude="{{latitude}}"
+  scale='16'
+  show-location="true"
+  subkey="O4RBZ-2Z63P-7BZDH-LV5YV-KVLXV-JKFXI"
+  polyline="{{polyline}}"
+  markers="{{markers}}"
+></map>
+
+<view class="main">
+  <view >下单时间：<text>{{order.time}}</text></view>
+  <!-- <view >送达：<text>{{}}</text></view> -->
+  <view >物品信息：<text>{{order.text}}</text></view>
+  <view >备注：<text>{{order.remark}}</text></view>
+</view>
+
+<view class="button"  style="background: #FE4E29;color: white;" bindtap="skip">收件</view>

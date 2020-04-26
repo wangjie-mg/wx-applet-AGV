@@ -1,0 +1,15 @@
+<view wx:if="{{!firstList}}" class="jy-mian">
+  <image src="../sendlist/jy.png" ></image>
+  <view>暂无交易记录</view>
+</view>
+<view wx:if="{{firstList}}" wx:for="{{firstList}}" wx:key="index" class='recordItem' data-id="{{index}}" bindtap="onskip">
+  <view class="item-title"> <image src="../sendlist/wl.png"></image> <view>物流</view> <text>已完成</text></view>
+    <view class="item-main">
+      <view>下单时间: <text>{{item.time}}</text></view>
+      <view>物品信息: <text>{{item.text}}</text></view>
+      <view>支付金额: <text>{{item.money}}</text></view>
+    </view>
+  <view class="item-button">
+      <view bindtap="onskip">查看详情</view>
+  </view>
+ </view>

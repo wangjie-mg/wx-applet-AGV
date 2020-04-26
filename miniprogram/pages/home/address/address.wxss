@@ -1,0 +1,16 @@
+.dress-title{
+  width: 80vw;
+  
+}
+.li{
+  display: flex;
+  align-items: center;
+  margin:3vw 0 3vw 0;
+}
+.li-b{
+  padding: 3vw;
+}
+.li-b image{
+  width: 50rpx;
+  height: 50rpx;
+}
